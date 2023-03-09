@@ -6,7 +6,7 @@ function Hero() {
       <div className="hero">
         <h1>Coffee House</h1>
         <p>THE AROMA</p>
-        <button>Need a Table?</button>
+        <a href="#contact">Book Now!</a>
       </div>
     </section>
   );

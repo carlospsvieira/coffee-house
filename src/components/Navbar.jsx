@@ -1,11 +1,12 @@
 import React from "react";
+import { SiCoffeescript } from "react-icons/si";
 
 function Navbar() {
   return (
     <nav>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a href="#home"> <SiCoffeescript size={25}/> </a>
         </li>
         <li>
           <a href="#quality">Quality</a>

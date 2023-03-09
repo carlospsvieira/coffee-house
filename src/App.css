@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+}
+
+main {
+  padding: 0 3rem;
+}
+
+/* Navbar */
+
+nav {
+  padding: 2rem 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+nav ul a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  margin-bottom: -1px;
+}
+
+/* Hero section */
+
+.hero {
+  background-image: linear-gradient(#24242451, rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/373888/pexels-photo-373888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 80vh;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.hero h1 {
+  font-family: 'Satisfy', cursive;
+  font-weight: 200;
+  font-size: 7rem;
+  color: white;
+  text-shadow: 3px 3px rgb(57, 57, 57);
+}
+
+.hero p {
+  font-size: 2rem;
+  color: rgb(206, 144, 67);
+  text-shadow: 2px 2px black;
+
+}

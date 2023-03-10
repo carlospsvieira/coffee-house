@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import { SiCoffeescript } from "react-icons/si";
 
 function Navbar() {
@@ -6,19 +7,30 @@ function Navbar() {
     <nav>
       <ul>
         <li>
-          <a href="#home"> <SiCoffeescript size={25}/> </a>
+          <Link to="home" smooth={true}>
+            {" "}
+            <SiCoffeescript size={25} />{" "}
+          </Link>
         </li>
         <li>
-          <a href="#quality">Quality</a>
+          <Link to="quality" smooth={true}>
+            Quality
+          </Link>
         </li>
         <li>
-          <a href="#menu">Menu</a>
+          <Link to="menu" smooth={true}>
+            Menu
+          </Link>
         </li>
         <li>
-          <a href="#news">News</a>
+          <Link to="news" smooth={true}>
+            News
+          </Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="contact" smooth={true}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

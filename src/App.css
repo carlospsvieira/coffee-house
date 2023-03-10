@@ -231,3 +231,58 @@ nav ul a:hover {
   color: rgb(248, 193, 126);
   font-size: x-large;
 }
+
+/* Menu section */
+
+#menu {
+  height: 100vh;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu-container h1 {
+  font-size: 2rem;
+}
+
+.menu-card {
+  display: flex;
+  background-color: #151515;
+  border-radius: 1rem;
+}
+
+.menu-picture {
+  background-image: linear-gradient(#24242451, rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/2267870/pexels-photo-2267870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  padding: 0 3rem;
+}
+
+.pricing div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: large;
+}
+
+.dollar {
+  color: rgb(151, 151, 151);
+}

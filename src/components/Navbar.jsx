@@ -18,17 +18,17 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="menu" smooth={true} offset={-100}>
+          <Link to="menu" smooth={true} offset={-50}>
             Menu
           </Link>
         </li>
         <li>
-          <Link to="news" smooth={true} offset={-100}>
+          <Link to="news" smooth={true} offset={-50}>
             News
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} offset={-100}>
+          <Link to="contact" smooth={true} offset={-50}>
             Contact
           </Link>
         </li>

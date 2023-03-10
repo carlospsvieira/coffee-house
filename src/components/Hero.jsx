@@ -9,7 +9,7 @@ function Hero() {
     <section id="home">
       <div className="hero">
         <h1>Coffee House</h1>
-        <p>THE AROMA</p>
+        <p>HAVE A COFFE AND CREATE GOOD MEMORIES</p>
         <Link to="contact" smooth={true}>
           Book Now!
         </Link>

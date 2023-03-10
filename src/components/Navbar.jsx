@@ -9,7 +9,7 @@ function Navbar() {
         <li>
           <Link to="home" smooth={true}>
             {" "}
-            <SiCoffeescript size={25} />{" "}
+            <SiCoffeescript size={35} />{" "}
           </Link>
         </li>
         <li>

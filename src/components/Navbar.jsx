@@ -13,22 +13,22 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="quality" smooth={true}>
+          <Link to="quality" smooth={true} offset={-50}>
             Quality
           </Link>
         </li>
         <li>
-          <Link to="menu" smooth={true}>
+          <Link to="menu" smooth={true} offset={-100}>
             Menu
           </Link>
         </li>
         <li>
-          <Link to="news" smooth={true}>
+          <Link to="news" smooth={true} offset={-100}>
             News
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true}>
+          <Link to="contact" smooth={true} offset={-100}>
             Contact
           </Link>
         </li>

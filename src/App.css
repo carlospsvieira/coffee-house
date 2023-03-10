@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* General Styles */
+
 body {
   background-color: #212121;
 }
@@ -14,6 +16,10 @@ header, main {
 
 main {
   margin-top: 40vh;
+}
+
+a {
+  cursor: pointer;
 }
 
 /* Navbar */
@@ -66,6 +72,7 @@ nav ul a:hover {
 }
 
 .hero p {
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 3rem;
   color: rgb(248, 193, 126);
   text-shadow: 2px 2px black;
@@ -130,9 +137,97 @@ nav ul a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
 }
 
 .benefits {
   display: flex;
   flex-direction: column;
+  color: white;
+  gap: 0.5rem;
+}
+
+.benefits h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.benefits-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+}
+
+.benefits-card h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+}
+
+.benefits-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+.moments {
+  background-image: linear-gradient(#24242451, rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  object-fit: cover;
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.moments h1 {
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 3px 3px rgb(57, 57, 57);
+}
+
+.moments span {
+  color: rgb(248, 193, 126);
+  text-shadow: 2px 2px rgb(57, 57, 57);
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 1rem;
+}
+
+.quote {
+  background-image: linear-gradient(#24242451, rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  object-fit: cover;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  border-radius: 1rem;
+}
+
+.quote p {
+  max-width: 900px;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  margin: 2rem 0;
+  text-shadow: 2px 2px rgb(57, 57, 57);
+}
+
+.quote span {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(248, 193, 126);
+  font-size: x-large;
 }

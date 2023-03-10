@@ -10,7 +10,7 @@ function Hero() {
       <div className="hero">
         <h1>Coffee House</h1>
         <p>THE AROMA</p>
-        <Link to="contact" smooth={true} offset={-50}>
+        <Link to="contact" smooth={true}>
           Book Now!
         </Link>
       </div>
@@ -19,7 +19,7 @@ function Hero() {
           <MdCoffee size={100} />
           <span>Great Americano</span>
           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-          <Link to="menu" smooth={true} offset={-50}>
+          <Link to="menu" smooth={true}>
             See Menu
           </Link>
         </div>
@@ -27,7 +27,7 @@ function Hero() {
           <SiBuymeacoffee size={90} />
           <span style={{ marginTop: "0.5rem" }}>Delicious Latte</span>
           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-          <Link to="menu" smooth={true} offset={-50}>
+          <Link to="menu" smooth={true}>
             See Menu
           </Link>
         </div>
@@ -35,7 +35,7 @@ function Hero() {
           <GiCoffeeMug size={100} />
           <span>Best Mocha</span>
           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-          <Link to="menu" smooth={true} offset={-50}>
+          <Link to="menu" smooth={true}>
             See Menu
           </Link>
         </div>

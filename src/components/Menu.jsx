@@ -4,10 +4,8 @@ function Menu() {
   return (
     <section id="menu">
       <div className="menu-container">
-        <div>
-          <span>From Our Menu</span>
           <h1>Pick Your Favorite</h1>
-        </div>
+          <span>From Our Menu</span>
         <div className="menu-card">
           <div className="menu-picture" />
           <div className="pricing">
@@ -35,6 +33,24 @@ function Menu() {
               <span>$4</span>
               <span>$4</span>
             </div>
+          </div>
+        </div>
+        <div className="stats-container">
+          <div className="stats">
+            <span style={{fontSize: "3rem", color: "rgb(248, 193, 126)"}}>200+</span>
+            <span>Clients Every Day</span>
+          </div>
+          <div className="stats">
+            <span style={{fontSize: "3rem", color: "rgb(248, 193, 126)"}}>180+</span>
+            <span>Great Memories</span>
+          </div>
+          <div className="stats">
+            <span style={{fontSize: "3rem", color: "rgb(248, 193, 126)"}}>350+</span>
+            <span>Cups of Coffee Daily</span>
+          </div>
+          <div className="stats">
+            <span style={{fontSize: "3rem", color: "rgb(248, 193, 126)"}}>20+</span>
+            <span>Types of Coffee</span>
           </div>
         </div>
       </div>

@@ -212,7 +212,7 @@ nav ul a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0;
+  margin-top: 8rem;
   border-radius: 1rem;
 }
 
@@ -236,6 +236,9 @@ nav ul a:hover {
 
 #menu {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .menu-container {
@@ -244,22 +247,23 @@ nav ul a:hover {
   align-items: center;
   justify-content: center;
   color: white;
-  gap: 3rem;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 .menu-container h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .menu-card {
   display: flex;
   background-color: #151515;
   border-radius: 1rem;
+  margin: 3rem 0;
 }
 
 .menu-picture {
-  background-image: linear-gradient(#24242451, rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/2267870/pexels-photo-2267870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: linear-gradient(#24242451, rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/2568452/pexels-photo-2568452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   object-fit: cover;
   width: 500px;
@@ -285,4 +289,16 @@ nav ul a:hover {
 
 .dollar {
   color: rgb(151, 151, 151);
+}
+
+.stats-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

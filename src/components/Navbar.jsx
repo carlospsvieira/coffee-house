@@ -18,7 +18,7 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="menu" smooth={true} offset={-50}>
+          <Link to="menu" smooth={true}>
             Menu
           </Link>
         </li>

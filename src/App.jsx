@@ -5,6 +5,7 @@ import Quality from "./components/Quality";
 import Menu from "./components/Menu";
 import News from "./components/News";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <News />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }

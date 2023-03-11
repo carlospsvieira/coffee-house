@@ -91,10 +91,10 @@ nav ul a:hover {
 }
 
 .hero a:hover {
-  box-shadow: 0 0 5px white;
+  background-color: transparent;
+  border-bottom: 3px solid rgb(192, 123, 38);
+  margin-bottom: -3px;
 }
-
-/* Hero cards */
 
 .hero-cards {
   display: flex;
@@ -388,7 +388,7 @@ nav ul a:hover {
 }
 
 .contact-booking {
-  background-image: linear-gradient(#24242451, rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/374147/pexels-photo-374147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: linear-gradient(#24242451, rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/606545/pexels-photo-606545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
@@ -409,10 +409,41 @@ nav ul a:hover {
   text-shadow: 2px 2px black;
 }
 
+/* Reservation form */
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reservation-form input, .reservation-form select {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: large;
+}
+
+.reservation-form div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reservation-form button {
+  padding: 0.5rem 0;
+  background-color: rgb(192, 123, 38);
+  color: white;
+  font-size: large;
+  font-weight: 600;
+}
+
+.reservation-form button:hover {
+  cursor: pointer;
+}
+
 /* Footer */
 
 footer {
-  height: 50vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;

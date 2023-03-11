@@ -1,4 +1,5 @@
 import React from "react";
+import Reservation from "./Reservation";
 
 function Contact() {
   return (
@@ -11,7 +12,7 @@ function Contact() {
         </div>
         <div className="contact-booking">
           <h1>Need a Table?</h1>
-          <input type="date" name="booking" id="booking" />
+          <Reservation />
         </div>
       </div>
     </section>

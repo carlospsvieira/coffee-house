@@ -7,10 +7,10 @@ function Navbar() {
     <nav>
       <ul>
         <li>
-          <Link to="home" smooth={true}>
+          <span style={{color: "white"}}>
             {" "}
             <SiCoffeescript size={35} />{" "}
-          </Link>
+          </span>
         </li>
         <li>
           <Link to="quality" smooth={true} offset={-50}>

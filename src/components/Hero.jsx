@@ -10,8 +10,8 @@ function Hero() {
       <div className="hero">
         <h1>Coffee House</h1>
         <p>HAVE A COFFE AND CREATE GOOD MEMORIES</p>
-        <Link to="contact" smooth={true}>
-          Book Now!
+        <Link to="menu" smooth={true}>
+          Our Menu
         </Link>
       </div>
       <div className="hero-cards">

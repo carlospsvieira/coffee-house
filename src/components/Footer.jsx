@@ -12,12 +12,14 @@ function Footer() {
     <footer>
       <div className="footer-container">
         <h1>Coffee House</h1>
-        <h2>Socials</h2>
-        <div className="socials">
-          <TbBrandFacebook />
-          <TbBrandInstagram />
-          <TbBrandLinkedin />
-          <TbBrandTwitter />
+        <div className="socials-container">
+          <h2>Socials</h2>
+          <div className="socials">
+            <TbBrandFacebook />
+            <TbBrandInstagram />
+            <TbBrandLinkedin />
+            <TbBrandTwitter />
+          </div>
         </div>
         <span>
           <TbCopyright /> All rights reserved, 2023.

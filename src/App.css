@@ -303,3 +303,40 @@ nav ul a:hover {
   justify-content: center;
   align-items: center;
 }
+
+/* News section */
+
+#news {
+  height: 100vh;
+}
+
+/* Carousel */
+
+.slider {
+  
+}
+
+.news-card {
+  box-shadow: 0 4px 8px 0 #151515;
+  transition: 0.3s;
+  padding: 1rem;
+}
+
+.news-card:hover {
+  box-shadow: 0 30px 60px 0 #151515;
+}
+
+.news-card img {
+  height: 400px;
+}
+
+.news-description {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #151515;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  gap: 0.5rem;
+}

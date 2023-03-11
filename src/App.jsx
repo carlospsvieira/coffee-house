@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Quality from "./components/Quality";
 import Menu from "./components/Menu";
 import News from "./components/News";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Quality />
         <Menu />
         <News />
+        <Contact />
       </main>
     </>
   );

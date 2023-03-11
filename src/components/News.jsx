@@ -16,7 +16,7 @@ function News() {
       <div className="news-container">
         <h1>Coffee News</h1>
         <h2>Be The First to Know</h2>
-        <Slider {...settings}>
+        <Slider {...settings} className="slider">
           <article className="news-card">
             <img
               src="https://images.pexels.com/photos/4427815/pexels-photo-4427815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

@@ -310,19 +310,27 @@ nav ul a:hover {
   height: 100vh;
 }
 
-/* Carousel */
+.news-container h1, h2 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
-.slider {
-  
+.news-container h2 {
+  font-size: large;
+  margin-bottom: 3rem;
 }
 
 .news-card {
-  box-shadow: 0 4px 8px 0 #151515;
   transition: 0.3s;
   padding: 1rem;
+  opacity: 0.8;
 }
 
 .news-card:hover {
+  cursor: pointer;
   box-shadow: 0 30px 60px 0 #151515;
 }
 

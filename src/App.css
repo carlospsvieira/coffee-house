@@ -540,7 +540,7 @@ footer {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1400px) {
   header, main, footer {
     padding: 0 0.5rem;
   }

@@ -4,8 +4,7 @@ import { SiCoffeescript } from "react-icons/si";
 import { Context } from "../context/AddProvider";
 
 function NavLinks() {
-  const { menuOpen, setMenuOpen } = useContext(Context);
-  console.log(menuOpen)
+  const { setMenuOpen } = useContext(Context);
 
   const handleMenuOpen = () => {
     setMenuOpen(false)

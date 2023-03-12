@@ -421,6 +421,7 @@ nav ul a:hover {
   padding: 0.5rem;
   text-align: center;
   font-size: large;
+  width: 100%;
 }
 
 .reservation-form div {
@@ -438,6 +439,11 @@ nav ul a:hover {
 
 .reservation-form button:hover {
   cursor: pointer;
+}
+
+.reservation-form button:disabled {
+  background-color: gray;
+  cursor: initial;
 }
 
 /* Footer */

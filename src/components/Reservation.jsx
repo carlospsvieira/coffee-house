@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const OPEN_HOURS = [
-  "When?",
+  "What time?",
   "9:00am",
   "10:00am",
   "11:00am",
@@ -17,17 +17,18 @@ const OPEN_HOURS = [
   "9:00pm",
 ];
 
+const formElement = "form";
+
 function Reservation() {
-  const [reservation, setReservation] = useState({ time: "When?" });
+  const [reservation, setReservation] = useState({ time: "What time?" });
   const [btnValidation, setBtnValidation] = useState(true);
   const [hours, setHours] = useState(OPEN_HOURS);
-
-  console.log(reservation);
+  const [success, setSuccess] = useState(false);
 
   const validateBTn = () => {
     if (
       reservation.date &&
-      reservation.time !== "When?" &&
+      reservation.time !== "What time?" &&
       reservation.email &&
       reservation.first &&
       reservation.last
@@ -48,54 +49,24 @@ function Reservation() {
     }
   };
 
-  // const handleFirstName = ({ target }) => {
-  //   const { value } = target;
-  //   setReservation((prev) => ({ ...prev, first: value }));
-  // };
-
-  // const handleLastName = ({ target }) => {
-  //   const { value } = target;
-  //   setReservation((prev) => ({ ...prev, date: value }));
-  // };
-
-  // const handleDate = ({ target }) => {
-  //   const { value } = target;
-  //   setReservation((prev) => ({ ...prev, date: value }));
-  // };
-
-  // const handleTime = ({ target }) => {
-  //   const { value } = target;
-  //   setReservation((prev) => ({ ...prev, time: value }));
-  // };
-
   const handleChange = ({ target }) => {
     const { value, name } = target;
-    // switch (name) {
-    //   case "first":
-    //     setReservation((prev) => ({ ...prev, first: value }));
-    //     break;
-    //   case "last":
-    //     setReservation((prev) => ({ ...prev, last: value }));
-    //     break;
-    //   case "email":
-    //     setReservation((prev) => ({ ...prev, email: value }));
-    //     break;
-    //   case "date":
-    //     setReservation((prev) => ({ ...prev, date: value }));
-    //     break;
-    //   case "time":
-    //     setReservation((prev) => ({ ...prev, time: value }));
-    //   default:
-    //     return;
-    // }
-
     setReservation((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // set reservation to local storage //
     localStorage.setItem("reservation", JSON.stringify(reservation));
+
+    // check for existing reservation //
     existingReservation();
+
+    // clear form inputs at once rather than creating new states only to change them back to default //
+    document.querySelector(formElement).reset();
+
+    setBtnValidation(true);
+    setSuccess(true);
   };
 
   useEffect(() => {
@@ -105,6 +76,20 @@ function Reservation() {
 
   return (
     <form className="reservation-form" onSubmit={handleSubmit}>
+      {success && (
+        <p
+          style={{
+            backgroundColor: "#212121",
+            padding: "0.5rem 0",
+            textAlign: "center",
+            color: "white",
+          }}
+        >
+          <span style={{ color: "green", fontWeight: "600" }}>Booked!</span>{" "}
+          <strong>Confirmation Code:</strong>{" "}
+          {`${reservation.last}${reservation.time}${reservation.date}`.toUpperCase()}
+        </p>
+      )}
       <div>
         <input
           type="text"
@@ -112,6 +97,7 @@ function Reservation() {
           id="first"
           placeholder="First Name"
           onChange={handleChange}
+          required
         />
         <input
           type="text"
@@ -119,6 +105,7 @@ function Reservation() {
           id="last"
           placeholder="Last Name"
           onChange={handleChange}
+          required
         />
       </div>
       <input
@@ -127,13 +114,20 @@ function Reservation() {
         id="email"
         placeholder="Email"
         onChange={handleChange}
+        required
       />
       <div>
-        <input type="date" name="date" id="date" onChange={handleChange} />
+        <input
+          type="date"
+          name="date"
+          id="date"
+          onChange={handleChange}
+          required
+        />
         {hours.length === 0 ? (
           <h2>Sorry, We're all booked up.</h2>
         ) : (
-          <select name="time" id="time" onChange={handleChange}>
+          <select name="time" id="time" onChange={handleChange} required>
             {hours.map((hour, index) => (
               <option value={hour} key={index}>
                 {hour}

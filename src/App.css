@@ -351,7 +351,7 @@ nav ul a:hover {
 
 /* Contact section */
 
-#contact h1 {
+.heading-contact {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   text-align: center;
@@ -393,7 +393,7 @@ nav ul a:hover {
   border-bottom-right-radius: 1rem;
 }
 
-.contact-hours h1, .contact-booking h1 {
+.contact-hours h1, .contact-booking h1, .contact-booking h2 {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   text-align: center;
@@ -401,6 +401,11 @@ nav ul a:hover {
   font-size: 3rem;
   text-shadow: 2px 2px black;
   margin-bottom: 1rem;
+}
+
+.contact-booking h2 {
+  font-size: 1.5rem;
+  color: rgb(248, 193, 126);
 }
 
 .contact-hours span {

@@ -11,7 +11,7 @@ function Hero() {
         <h1>Coffee House</h1>
         <p>HAVE A COFFE AND CREATE GOOD MEMORIES</p>
         <Link to="menu" smooth={true}>
-          <div class="btn hero-btn">Our Menu</div>
+          <div className="btn hero-btn">Our Menu</div>
         </Link>
       </div>
       <div className="hero-cards">

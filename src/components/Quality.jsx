@@ -11,7 +11,7 @@ function Quality() {
           <span>Some benefits</span>
           <h1>Only Quality Coffee Beans</h1>
           <div className="benefits-card">
-            <GiCoffeeBeans size={35} color={"rgb(248, 193, 126)"} />
+            <GiCoffeeBeans size={35} color={"rgb(248, 193, 126)"} className="quality-icons"/>
             <div>
               <h2>Great Coffee Beans</h2>
               <span>
@@ -21,7 +21,7 @@ function Quality() {
             </div>
           </div>
           <div className="benefits-card">
-            <GiCoffeeCup size={35} color={"rgb(248, 193, 126)"} />
+            <GiCoffeeCup size={35} color={"rgb(248, 193, 126)"} className="quality-icons"/>
             <div>
               <h2>Best Coffee Flavor</h2>
               <span>
@@ -31,7 +31,7 @@ function Quality() {
             </div>
           </div>
           <div className="benefits-card">
-            <MdCoffeeMaker size={35} color={"rgb(248, 193, 126)"} />
+            <MdCoffeeMaker size={35} color={"rgb(248, 193, 126)"} className="quality-icons"/>
             <div>
               <h2>Incredible Mixing</h2>
               <span>

@@ -30,9 +30,9 @@ nav {
 
 nav ul {
   display: flex;
-  list-style: none;
   justify-content: center;
   align-items: center;
+  list-style: none;
   gap: 3rem;
 }
 
@@ -45,6 +45,10 @@ nav ul a {
 nav ul a:hover {
   border-bottom: 2px solid white;
   margin-bottom: -1px;
+}
+
+.burger-menu-container {
+  display: none;
 }
 
 /* Hero section */
@@ -534,4 +538,190 @@ footer {
   gap: 0.5rem;
   margin-bottom: 0.5rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1500px) {
+  header, main, footer {
+    padding: 0 0.5rem;
+  }
+
+  main {
+    margin-top: 3rem;
+  }
+
+  .full-navbar {
+    display: none;
+  }
+  
+  .news-link {
+    display: none;
+  }
+  
+  /* Position and sizing of burger button */
+  
+  .burger-menu-container {
+    display: contents;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: start;
+    gap: 0.5rem;
+  }
+
+  .bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    left: 36px;
+    top: 20px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: white;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: white;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+
+  .bm-menu {
+    background: #373a47;
+    padding: 1rem;
+    font-size: 1.15em;
+    max-height: 100vh;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-cards {
+    display: none;
+  }
+
+  .quality-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .quality-container h1, .quality-container span, .quality-container h2 {
+    text-align: center;
+  }
+
+  .quality-icons {
+    display: none;
+  }
+
+  .benefits-card {
+    margin-left: 0;
+  }
+
+  .menu-container {
+    margin-top: 3rem;
+  }
+
+  .pricing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  padding: 1rem 0;
+  }
+
+  #menu {
+    height: fit-content;
+  }
+
+  .menu-card {
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  .menu-picture {
+    max-width: 400px;
+  }
+
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  
+  #news {
+    display: none;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-booking, .contact-hours {
+    padding: 0, 1rem;
+    text-align: center;
+  }
+
+  .footer-container {
+    width: 100%;
+    gap: 5rem;
+  }
+
+  .footer-container h1 {
+    display: none;
+  }
+
 }

@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-scroll";
 import { SiCoffeescript } from "react-icons/si";
+import { Context } from "../context/AddProvider";
 
 function NavLinks() {
+  const { menuOpen, setMenuOpen } = useContext(Context);
+  console.log(menuOpen)
+
+  const handleMenuOpen = () => {
+    setMenuOpen(false)
+  };
+
   return (
     <nav>
       <ul>
@@ -13,12 +21,17 @@ function NavLinks() {
           </span>
         </li>
         <li>
-          <Link to="quality" smooth={true} offset={-50}>
+          <Link
+            to="quality"
+            smooth={true}
+            offset={-50}
+            onClick={handleMenuOpen}
+          >
             Quality
           </Link>
         </li>
         <li>
-          <Link to="menu" smooth={true}>
+          <Link to="menu" smooth={true} onClick={handleMenuOpen}>
             Menu
           </Link>
         </li>
@@ -28,7 +41,12 @@ function NavLinks() {
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} offset={-50}>
+          <Link
+            to="contact"
+            smooth={true}
+            offset={-50}
+            onClick={handleMenuOpen}
+          >
             Contact
           </Link>
         </li>

@@ -575,7 +575,7 @@ footer {
     position: fixed;
     width: 30px;
     height: 25px;
-    left: 36px;
+    left: 70%;
     top: 20px;
   }
 
@@ -616,6 +616,7 @@ footer {
     padding: 1rem;
     font-size: 1.15em;
     max-height: 100vh;
+    margin-left: -10px;
   }
 
   /* Morph shape necessary with bubble or elastic */

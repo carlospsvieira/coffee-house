@@ -42,8 +42,8 @@ function Reservation() {
     if (!storage) return;
 
     if (reservation.date === storage.date) {
-      const availableTime = hours.filter((hour) => hour !== storage.time);
-      setHours(availableTime);
+      const availableHours = hours.filter((hour) => hour !== storage.time);
+      setHours(availableHours);
     } else {
       setHours(OPEN_HOURS);
     }
@@ -62,7 +62,7 @@ function Reservation() {
     // check for existing reservation //
     existingReservation();
 
-    // clear form inputs at once rather than creating new states only to change them back to default //
+    // clear form inputs at once rather than creating states for every input only to change them back to default //
     document.querySelector(formElement).reset();
 
     setBtnValidation(true);

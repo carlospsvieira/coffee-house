@@ -75,25 +75,58 @@ nav ul a:hover {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.5rem;
   color: white;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px rgb(57, 57, 57);
+  margin-bottom: 2rem;
 }
 
-.hero a {
-  background-color: rgb(192, 123, 38);
-  font-weight: 600;
-  font-size: large;
-  text-decoration: none;
-  color: white;
-  padding: 0.7rem 3rem;
-  border-radius: 2px;
-  margin-top: 3rem;
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+
+.hero-btn {
   font-family: 'Roboto Condensed', sans-serif;
+	color: rgb(248, 193, 126);
+  font-size: 1.3rem;
+	transition: all 0.5s;
+	position: relative;
+  text-shadow: 2px 2px rgb(57, 57, 57);
 }
-
-.hero a:hover {
-  background-color: transparent;
-  border-bottom: 3px solid rgb(192, 123, 38);
-  margin-bottom: -3px;
+.hero-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgb(248, 193, 126);
+	transition: all 0.3s;
+}
+.hero-btn:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+}
+.hero-btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 1px solid rgb(248, 193, 126);
+	transform: scale(1.2,1.2);
+}
+.hero-btn:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
 }
 
 .hero-cards {

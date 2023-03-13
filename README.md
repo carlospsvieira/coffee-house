@@ -2,7 +2,7 @@
 
 #### Intro
 
-This web app has a booking system and a sophisticated look.
+This web app has a sophisticated look and a booking system.
 Do I have to mention I love coffee too?
 
 #### Technologies:
